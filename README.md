@@ -1,7 +1,7 @@
 # SRA_submission
 
 ## Notes
-1. Each row of the SRA metadata sheet is an EXPERIMENT, which is represented by the combination of `library + sequencing strategy + layout + instrument model`. This means if you have multiple sequencing libraries prepared from one biological sample, they should fit in multiple rows in the SRA metadata sheet, with the same `sample name`. [See reference](https://www.ncbi.nlm.nih.gov/sra/docs/submitmeta/).
+1. Each row of the [SRA metadata sheet](SRA_metadata.xlsx) is an EXPERIMENT, which is represented by the combination of `library + sequencing strategy + layout + instrument model`. This means if you have multiple sequencing libraries prepared from one biological sample, they should fit in multiple rows in the SRA metadata sheet, with the same `sample name`. [See reference](https://www.ncbi.nlm.nih.gov/sra/docs/submitmeta/).
 2. In cases where there are multiple sequencing runs on the same library of the same sample, files generated should be listed in the same row. If sequencing reads are pair-ended, the order of listed filenames should be `sequencing run1-end1, sequencing run1-end2, sequencing run2-end1, sequencing run2-end2, ...`. [See reference](https://www.ncbi.nlm.nih.gov/sra/docs/submitquestions/#question3sp).
 
 ## Command for preload data to SRA
